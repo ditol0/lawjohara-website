@@ -29,11 +29,7 @@ A professional law firm website developed using Laravel, designed to provide a m
 
 ---
 
-## 📸 Screenshots
 
-*(You can add screenshots here later)*
-
----
 
 ## ⚙️ Installation
 
