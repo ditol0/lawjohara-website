@@ -1,0 +1,229 @@
+.contact-page {
+    padding-top: 120px;
+}
+
+.contact-hero {
+    position: relative;
+    min-height: 52vh;
+    padding: 70px 0 40px;
+    overflow: hidden;
+    background: var(--gradient-primary);
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(45, 55, 72, 0.1) 0%, transparent 50%);
+}
+
+.contact-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-hero-badge,
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contact-hero-title {
+    color: #fff;
+    font-size: 3.6rem;
+    margin-bottom: 16px;
+}
+
+.contact-hero-subtitle {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.contact-section {
+    padding: 90px 0 120px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--gray);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 34px;
+}
+
+.contact-info {
+    display: grid;
+    gap: 24px;
+}
+
+.contact-method,
+.contact-form-container {
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 28px;
+}
+
+.contact-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    color: #fff;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+}
+
+.contact-details h3 {
+    margin-bottom: 8px;
+}
+
+.contact-details p,
+.contact-details a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.contact-form-container {
+    padding: 36px;
+    border-top: 5px solid var(--secondary);
+}
+
+.alert {
+    padding: 18px 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background: rgba(56, 161, 105, 0.12);
+    color: #166534;
+}
+
+.alert-error {
+    background: rgba(229, 62, 62, 0.12);
+    color: #991b1b;
+}
+
+.alert-error ul {
+    margin: 10px 0 0;
+    padding-right: 18px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 22px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: grid;
+    gap: 10px;
+}
+
+.form-label {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    border: 2px solid rgba(26, 54, 93, 0.1);
+    border-radius: 14px;
+    padding: 16px 18px;
+    font: inherit;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.form-textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.error-message {
+    color: #c53030;
+    font-size: 0.95rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font: inherit;
+}
+
+.btn-primary {
+    background: var(--gradient-gold);
+    color: #fff;
+    padding: 16px 26px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .contact-content,
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero-title,
+    .section-title {
+        font-size: 2.4rem;
+    }
+}
